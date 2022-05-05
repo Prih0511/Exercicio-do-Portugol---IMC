@@ -1,0 +1,42 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		const real PRECO_brinco = 3.50
+		const real PRECO_aneis = 2.00
+		const real PRECO_colar = 5.50
+
+		cadeia nome
+		inteiro quantidade_brinco, quantidade_aneis, quantidade_colar
+		real total_brinco, total_aneis, total_colar, total_pagar
+
+			escreva("Digite seu nome:")
+			leia(nome)
+
+		escreva("\ndigite a quantidade de brincos que deseja comprar.")
+		leia(quantidade_brinco)
+		escreva("\ndigite a quantidade de aneis que deseja comprar.")
+		leia(quantidade_aneis)
+		escreva("\ndigite a quantidade de colar que deseja comprar.")
+		leia(quantidade_colar)
+
+		total_brinco = PRECO_brinco *quantidade_brinco
+		total_aneis = PRECO_brinco *quantidade_aneis
+		total_colar = PRECO_brinco *quantidade_colar
+
+		total_pagar = total_brinco + total_aneis + total_colar
+
+		limpa()
+
+		escreva("Cliente: ",nome,"\n")
+		escreva("=======================\n")
+		escreva("Brincos:", quantidade_brinco,"\n")
+		escreva("Anéis:", quantidade_aneis,"\n")
+		escreva("Colares:", quantidade_colar,"\n")
+		escreva("=======================\n")
+		escreva("Total a pagar: R$ ", total_pagar,"\n")
+
+		
+	}
+}
